@@ -1,7 +1,6 @@
 .btn {
   @include font-size(14px);
   border-radius: 3px;
-  border: 2px solid currentColor;
   display: inline-block;
   font-family: $base-font-family;
   font-weight: 600;
@@ -16,8 +15,21 @@
   }
 }
 
+.btn--primary {
+  background-color: $red;
+  border: 2px solid $red;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $red;
+  }
+}
+
 .btn--secondary {
   background-color: $white;
+  border: 2px solid $white;
   color: $red;
 
   &:hover,

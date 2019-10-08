@@ -1,0 +1,12 @@
+.about-us__heading {
+  @include font-size(18px);
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: $gutter * 1.5;
+
+  @media screen and (min-width: $medium-wide) {
+    @include font-size(32px);
+    margin-bottom: $gutter * 3;
+    max-width: 800px;
+  }
+}

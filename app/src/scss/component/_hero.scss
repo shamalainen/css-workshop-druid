@@ -11,13 +11,14 @@
   }
 
   .hero__container {
-    max-width: 800px;
+    width: 100%;
 
     @media screen and (min-width: $medium-wide) {
       align-items: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      max-width: 800px;
     }
   }
 }
