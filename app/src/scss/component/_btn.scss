@@ -1,0 +1,28 @@
+.btn {
+  @include font-size(14px);
+  border-radius: 3px;
+  border: 2px solid currentColor;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-weight: 600;
+  letter-spacing: 0.44px;
+  padding: $gutter $gutter * 1.5;
+  text-align: center;
+  transition: all .25s ease;
+
+  @media screen and (min-width: $medium-wide) {
+    @include font-size(16px);
+    letter-spacing: 0.5px;
+  }
+}
+
+.btn--secondary {
+  background-color: $white;
+  color: $red;
+
+  &:hover,
+  &:focus {
+    background-color: $red;
+    color: $white;
+  }
+}

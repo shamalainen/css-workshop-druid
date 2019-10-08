@@ -1,0 +1,35 @@
+.hero {
+  background-color: $red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+
+  @media screen and (min-width: $medium-wide) {
+    align-items: center;
+    min-height: 750px;
+  }
+
+  .hero__container {
+    max-width: 800px;
+
+    @media screen and (min-width: $medium-wide) {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.hero__heading {
+  @include font-size(22px);
+  color: $white;
+  margin-bottom: $gutter * 1.5;
+
+  @media screen and (min-width: $medium-wide) {
+    @include font-size(48px);
+    margin-bottom: $gutter * 3;
+    text-align: center;
+  }
+}
