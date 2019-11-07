@@ -3,34 +3,42 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 300px;
+  padding: $gutter * 6 0;
+
+  @media screen and (min-width: $medium) {
+    align-items: center;
+    padding: $gutter * 8 0;
+  }
 
   @media screen and (min-width: $medium-wide) {
     align-items: center;
-    min-height: 750px;
+    padding: $gutter * 10 0;
+  }
+
+  @media screen and (min-width: $wide) {
+    align-items: center;
+    padding: $gutter * 14 0;
   }
 
   .hero__container {
     width: 100%;
-
-    @media screen and (min-width: $medium-wide) {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      max-width: 800px;
-    }
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
 .hero__heading {
-  @include font-size(22px);
+  @include font-size(32px);
   color: $white;
-  margin-bottom: $gutter * 1.5;
+  margin-bottom: $gutter * 2;
+  text-align: center;
+  padding: 0 $gutter * 2;
 
   @media screen and (min-width: $medium-wide) {
     @include font-size(48px);
     margin-bottom: $gutter * 3;
-    text-align: center;
+    padding: 0 $gutter * 6;
   }
 }

@@ -7,3 +7,19 @@
     padding-top: $gutter * 8;
   }
 }
+
+.section--black {
+  background-color: $black-coal;
+}
+
+.section__heading {
+  margin-bottom: $gutter * 2;
+
+  @media screen and (min-width: $medium-wide) {
+    margin-bottom: $gutter * 4;
+  }
+
+  .section--black & {
+    color: $white;
+  }
+}

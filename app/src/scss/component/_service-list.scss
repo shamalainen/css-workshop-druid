@@ -1,0 +1,20 @@
+.service-list {
+  @media screen and (min-width: $medium-wide) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.service-list__item {
+  width: 100%;
+  margin-bottom: $gutter * 2;
+
+  @media screen and (min-width: $medium-wide) {
+    width: calc(100% / 3 - #{$gutter});
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

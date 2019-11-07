@@ -1,8 +1,8 @@
 .about-us__heading {
-  @include font-size(18px);
+  @include font-size(22px);
   font-weight: 600;
   line-height: 1.25;
-  margin-bottom: $gutter * 1.5;
+  margin-bottom: $gutter * 2;
 
   @media screen and (min-width: $medium-wide) {
     @include font-size(32px);

@@ -1,0 +1,23 @@
+.reference-list {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $medium-wide) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.reference-list__item {
+  width: 100%;
+  margin-bottom: $gutter * 2;
+
+  @media screen and (min-width: $medium-wide) {
+    width: calc(100% / 2 - #{$gutter});
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
